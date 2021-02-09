@@ -1,0 +1,29 @@
+#easy-deck {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #fff;
+  box-shadow: 2px 2px 2px #111;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+#normal-deck {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #fff;
+  box-shadow: 2px 2px 2px #111;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+#hard-deck {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #fff;
+  box-shadow: 2px 2px 2px #111;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
