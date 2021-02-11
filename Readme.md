@@ -3,7 +3,7 @@
 ## [View Live on Netlify](https://vigilant-bose-b425b3.netlify.app/)
 
 <ol>
-<li><a href="#how-to-launch">How to launch</a>
+<li><a href="#how-to-launch">How to Deploy</a>
 <ol>
 <li>Local </li>
 <li>On Netlify
