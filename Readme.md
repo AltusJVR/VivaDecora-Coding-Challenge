@@ -46,10 +46,7 @@ How to Deploy</li></h2>
   Once the authentication has been comleted, search for the VivaDecora-Coding-Challenge you have forked from Github.
   </li>
   <li>
-  Once you have selected the repository, slect delpoy from the master branch. 
-  </li>
-  <li>
-  In the publish directory section specify the "root" folder to deploy. <h5>(this is very important! If you do not specify this the deploy will fail!)</h5>
+  Once you have selected the repository, select delpoy from the master branch. 
   </li>
   <li>
   Netlify will create a unique url for your site, once the deploy is finished you can click on the url to open the site. 
