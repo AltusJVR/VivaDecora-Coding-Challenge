@@ -8,7 +8,6 @@
 <li>Local </li>
 <li>On Netlify
 </ol>
-<li> <a href="#folder-structure">Folder Stucture</a>
 </ol>
 <ol>
 
