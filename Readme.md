@@ -1,6 +1,6 @@
 # VivaMemory Coding Challenge
 
-## [View Live on Netlify](https://https://vivamemory-coding-challenge.netlify.app/)
+## [View Live on Netlify](https://vigilant-bose-b425b3.netlify.app/)
 
 <ol>
 <li><a href="#how-to-launch">How to launch</a>
