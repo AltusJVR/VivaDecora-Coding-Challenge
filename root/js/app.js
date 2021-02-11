@@ -7,6 +7,8 @@ let boardCountarr = [];
 let moves = 0;
 let congratsStore = moves;
 let levelOrigin = window.location.href;
+let windowPath = window.location.pathname;
+
 
 let params = new URLSearchParams(window.location.search);
 
@@ -33,11 +35,11 @@ function boardCount() {
 
 function setUrl() {
   params.set('moves', moves);
-  if (levelOrigin === 'http://127.0.0.1:5500/root/easy.html')
+  if (levelOrigin === 'http://127.0.0.1:5500/root/normal.html' || windowPath === '/easy.html')
     params.append('level', 'easy');
-} if (levelOrigin === 'http://127.0.0.1:5500/root/normal.html') {
+} if (levelOrigin === 'http://127.0.0.1:5500/root/normal.html' || windowPath === '/easy.html') {
   params.append('level', 'normal');
-} if (levelOrigin === 'http://127.0.0.1:5500/root/hard.html') {
+} if (levelOrigin === 'http://127.0.0.1:5500/root/normal.html' || windowPath === '/easy.html') {
   params.append('level', 'hard');
 }
 
