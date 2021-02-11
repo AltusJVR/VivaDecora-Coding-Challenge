@@ -5,7 +5,7 @@ let lockBoard = false;
 let firstCard, secondCard;
 let boardCountarr = [];
 let moves = 0;
-let congratsStore = moves;
+
 let levelOrigin = window.location.pathname;
 
 let params = new URLSearchParams(window.location.search);
@@ -40,6 +40,8 @@ function setUrl() {
 } if (levelOrigin === '/hard.html') {
   params.append('level', 'hard');
 }
+
+
 
 function pageRedirect() {
   if (levelOrigin === '/easy.html' && boardCountarr.length === 4) {
