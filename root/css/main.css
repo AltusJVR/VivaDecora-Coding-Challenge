@@ -139,3 +139,16 @@ a-hard, .difficulty-hard, .level-hard {
   border-radius: 5px;
   background: #fff;
 }
+
+#congrats .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#congrats h1 {
+  color: white;
+  background: #00b901;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+}

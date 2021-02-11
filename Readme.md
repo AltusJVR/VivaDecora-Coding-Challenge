@@ -1,6 +1,6 @@
-# VivaMemory Coding Challenge
+<h1>VivaMemory Coding Challenge</h1>
 
-## [View Live on Netlify](https://https://vivamemory-coding-challenge.netlify.app/)
+<h2><a href="https://https://vivamemory-coding-challenge.netlify.app/">View Live On Netlify</a></h2>
 
 <ol>
 <li><a href="#how-to-launch">How to launch</a>
