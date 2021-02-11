@@ -8,6 +8,7 @@ let moves = 0;
 let congratsStore = moves;
 let levelOrigin = window.location.href;
 let windowPath = window.location.pathname;
+let congratsPath = '/congrats.html';
 
 
 let params = new URLSearchParams(window.location.search);
@@ -35,23 +36,23 @@ function boardCount() {
 
 function setUrl() {
   params.set('moves', moves);
-  if (levelOrigin === 'http://127.0.0.1:5500/root/normal.html' || windowPath === '/easy.html')
+  if (windowPath === `/root/easy.html` || '/easy.html' === '/easy.html')
     params.append('level', 'easy');
-} if (levelOrigin === 'http://127.0.0.1:5500/root/normal.html' || windowPath === '/easy.html') {
+} if (windowPath === `/root/normal.html` || '/normal.html' === '/normal.html') {
   params.append('level', 'normal');
-} if (levelOrigin === 'http://127.0.0.1:5500/root/normal.html' || windowPath === '/easy.html') {
+} if (windowPath === `/root/hard.html` || '/hard.html' === '/hard.html') {
   params.append('level', 'hard');
 }
 
 function pageRedirect() {
-  if (levelOrigin === 'http://127.0.0.1:5500/root/easy.html' && boardCountarr.length === 4) {
+  if (windowPath === `/root/easy.html` || '/easy.html' && boardCountarr.length === 4) {
     setUrl()
     window.location.href = `${window.location.origin}/root/congrats.html?${params}`;
-  } if (levelOrigin === 'http://127.0.0.1:5500/root/normal.html' && boardCountarr.length === 8) {
+  } if (windowPath === `/root/easy.html` || '/easy.html' && boardCountarr.length === 4) {
     setUrl()
     window.location.href = `${window.location.origin}/root/congrats.html?${params}`;
 
-  } if (levelOrigin === 'http://127.0.0.1:5500/root/hard.html' && boardCountarr.length === 16) {
+  } if (windowPath === `/root/easy.html` || '/easy.html' && boardCountarr.length === 4) {
     setUrl()
     window.location.href = `${window.location.origin}/root/congrats.html?${params}`;
 

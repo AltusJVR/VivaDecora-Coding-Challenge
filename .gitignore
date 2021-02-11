@@ -1,6 +1,5 @@
 *.json
 *.scss
 *.toml
-*.txt
 # Local Netlify folder
 .netlify
