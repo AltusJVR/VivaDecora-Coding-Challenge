@@ -117,7 +117,7 @@ function unflipCards() {
     firstCard.classList.remove('bgcolor')
     secondCard.classList.remove('bgcolor')
     resetBoard();
-  }, 700);
+  }, 2000);
 }
 
 // Reset deck

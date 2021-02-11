@@ -11,18 +11,21 @@ html {
 }
 
 body {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
   height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-  padding-top: 3rem;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  height: 90%;
+  width: 90%;
 }
 
 #difficulty {
@@ -142,6 +145,7 @@ a-hard, .difficulty-hard, .level-hard {
 }
 
 #congrats {
+  padding-top: 3rem;
   height: 100vh;
   color: #fff;
 }
@@ -190,12 +194,45 @@ a-hard, .difficulty-hard, .level-hard {
   margin: 4rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+  .front-face,
+.back-face {
+    font-size: 1.5rem;
+  }
+
   #hard-deck {
     max-width: 90%;
   }
   #hard-deck .memory-card {
     max-width: 60px;
     max-height: 60px;
+  }
+}
+@media (min-width: 319px) {
+  .front-face,
+.back-face {
+    font-size: 1.2;
+  }
+
+  #normal-deck {
+    max-width: 90%;
+  }
+  #normal-deck .memory-card {
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  #hard-deck {
+    max-width: 100%;
+    margin: 0.2rem;
+  }
+  #hard-deck .memory-card {
+    max-width: 60px;
+    max-height: 60px;
+    margin: 0.2rem;
+  }
+
+  #congrats h2 {
+    font-size: 1.2rem;
   }
 }
