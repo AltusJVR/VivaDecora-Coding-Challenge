@@ -87,7 +87,7 @@ a-hard, .difficulty-hard, .level-hard {
 
 .memory-card:active {
   transform: scale(0.97);
-  transition: transform 0.2s;
+  transition: transform 0.4s;
 }
 
 .memory-card.flip {
@@ -114,7 +114,7 @@ a-hard, .difficulty-hard, .level-hard {
 }
 
 .front-face {
-  transform: rotateY(180deg);
+  transform: perspective(1000px) rotateY(180deg);
 }
 
 .resetbtn {
@@ -138,4 +138,52 @@ a-hard, .difficulty-hard, .level-hard {
   padding: 0.2rem 1rem;
   border-radius: 5px;
   background: #fff;
+}
+
+#congrats {
+  height: 100vh;
+  color: #fff;
+}
+#congrats p {
+  font-size: 1.2rem;
+}
+
+#congrats .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+}
+
+#congrats .check {
+  color: white;
+  font-size: 60px;
+  background: #00b901;
+  padding: 0.2rem 1rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px 4px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.play-again {
+  background: #fff;
+  color: #111;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+#congrats h1 {
+  margin-bottom: 1rem;
+}
+#congrats h2 {
+  margin-bottom: 0.5rem;
+}
+#congrats p {
+  margin-bottom: 2rem;
+}
+#congrats .logo {
+  margin: 4rem;
 }
